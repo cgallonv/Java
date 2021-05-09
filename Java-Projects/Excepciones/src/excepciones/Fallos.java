@@ -1,4 +1,4 @@
-package excepciones1;
+package excepciones;
 
 import javax.swing.*;
 
