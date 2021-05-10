@@ -28,7 +28,10 @@ public class Entrada_datos {
 				System.out.println("Has ingresado parametros incorrectos: " + e.toString());
 			} catch (NuevaExcepcion e) {
 				System.out.println(e.getMessage());
-				e.printStackTrace();
+				//e.printStackTrace();
+			} finally {
+				System.out.println("Adios");
+				System.exit(0);
 			}
 		} else {
 			System.out.println("Adios");
