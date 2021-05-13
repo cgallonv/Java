@@ -1,7 +1,9 @@
 package clases.objetos.personas;
 
-@SuppressWarnings("rawtypes")
-public abstract class Persona implements Comparable {
+import java.io.Serializable;
+
+@SuppressWarnings({ "rawtypes", "serial" })
+public abstract class Persona implements Comparable, Serializable {
 
 	private String nombre;
 

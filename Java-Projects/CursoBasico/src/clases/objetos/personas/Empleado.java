@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class Empleado extends Persona implements Trabajadores {
+	private static final long serialVersionUID = -7942924976142147028L;
 	private double sueldo;
 	private Date fecha_alta;
 	private static int id_siguiente = 1;
@@ -34,12 +35,12 @@ public class Empleado extends Persona implements Trabajadores {
 	public double estableceBonus(double bono) {
 		return Trabajadores.bonus_minimo + bono;
 	}
-	
+
 	public void subirSueldo(int porcentaje_aumento) {
 		double aumento = this.sueldo * porcentaje_aumento / 100;
 		this.sueldo += aumento;
 	}
-	
+
 	// metodo implementado de la interfaz comparable.
 	public int compareTo(Object miObjeto) {
 		Empleado otroEmpleado = (Empleado) miObjeto;
