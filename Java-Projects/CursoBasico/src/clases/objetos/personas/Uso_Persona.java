@@ -4,17 +4,20 @@ import java.util.*;
 
 public class Uso_Persona {
 	public static void main(String[] args) {
-
 		Jefe jefe = new Jefe("Angela", 500, 2001, GregorianCalendar.NOVEMBER, 25);
 		jefe.setIncentivo(5000);
-
-		Persona[] personas = { new Empleado("Carlos", 100, 2018, GregorianCalendar.JANUARY, 15),
-				new Empleado("Maria", 300, 2019, GregorianCalendar.MARCH, 26),
-				new Empleado("Jose", 200, 2021, GregorianCalendar.FEBRUARY, 1), new Empleado("Francisco"),
-				jefe, new Estudiante("Pedro", "Ing. Sistemas") };
 		
+		List<Persona> personaList = new ArrayList<Persona>();
+		
+		
+		personaList.add(new Empleado("Carlos", 100, 2018, GregorianCalendar.JANUARY, 15));
+		personaList.add(new Empleado("Maria", 300, 2019, GregorianCalendar.MARCH, 26));
+		personaList.add(new Empleado("Jose", 200, 2021, GregorianCalendar.FEBRUARY, 1));
+		personaList.add(new Empleado("Francisco"));
+		personaList.add(new Estudiante("Pedro", "Ing. Sistemas"));
+		personaList.add(jefe);
 	
-		for (Persona persona : personas) {
+		for (Persona persona : personaList) {
 			if (persona instanceof Empleado || persona instanceof Jefe) {	
 				Empleado empleado = (Empleado) persona;
 				empleado.subirSueldo(10);
@@ -26,10 +29,19 @@ public class Uso_Persona {
 			}
 		}
 
-		Arrays.sort(personas);
-		for (Persona persona : personas) {
-			System.out.println(persona.dameDescripcion());
+		personaList.sort(null);
+//		for (Persona persona : personaList) {
+//			System.out.println(persona.dameDescripcion());
+//		}
+		//iterator
+		Iterator<Persona> personaIterator = personaList.iterator();
+		while (personaIterator.hasNext()) {
+			System.out.println(personaIterator.next().dameDescripcion());
 		}
+		
+		
+		
+		System.out.println(personaList.size());
 	}
 
 }

@@ -43,6 +43,9 @@ public class Empleado extends Persona implements Trabajadores {
 
 	// metodo implementado de la interfaz comparable.
 	public int compareTo(Object miObjeto) {
+		if (miObjeto instanceof Estudiante) {
+			return -1;
+		}
 		Empleado otroEmpleado = (Empleado) miObjeto;
 		if (this.getId() < otroEmpleado.getId()) {
 			return -1;

@@ -1,7 +1,9 @@
 package clases.streams;
 
 import java.io.*;
-
+/**
+ * Escribir caracteres accediente directamente al archivo.
+ **/
 public class EjemploStreamsWrite {
 
 	public static void main(String[] args) {
