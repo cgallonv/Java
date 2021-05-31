@@ -7,8 +7,8 @@ public class Furgoneta extends Carro {
 	
 	public Furgoneta(int capacidad_carga, int plazas_extras) {
 	
-		super(); // llamar al constructor de la clase padre heredada.
-		
+		//super(); // llamar al constructor de la clase padre heredada.
+		//Aunque no se especifique se llama por defecto el constructor heredado
 		//propias
 		setCapacidad_carga(capacidad_carga);
 		setPlazas_extras(plazas_extras);

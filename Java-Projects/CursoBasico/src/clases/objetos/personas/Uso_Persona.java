@@ -8,6 +8,8 @@ public class Uso_Persona {
 		jefe.setIncentivo(5000);
 		
 		List<Persona> personaList = new ArrayList<Persona>();
+		//Set<Persona> personaList = new HashSet<Persona>();
+		//Hero el set no es ordenado y no permite ordenar.
 		
 		
 		personaList.add(new Empleado("Carlos", 100, 2018, GregorianCalendar.JANUARY, 15));

@@ -13,6 +13,7 @@ public class Carro {
 
 	// constructor publico y con el nombre de la clase.
 	public Carro() {
+		System.out.println("CARRO");
 		setLargo(2000);
 		setAncho(1000);
 		setMotor_cc(1600);
