@@ -37,6 +37,9 @@ public class FPExercisesRunner {
 		System.out.println(IntStream.range(1, 11).map(w -> w*w));
 		System.out.println("Lista 3 - cuadrados + boxed function: " + list2);
 		
+		// Valor por defecto 0, si no devuelve nada devuelve 0;
+		List.of(33,31,5,3,1).stream().filter(n -> n%2==0).max( (n1,n2) -> Integer.compare(n1,n2)).orElse(0);
+		
 		
 	}
 
