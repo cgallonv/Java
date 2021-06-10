@@ -1,1 +1,1 @@
-Esta es una prueba de escrituraEsta es una prueba de escritura2Esta es una prueba de escritura2
+Prueba escritura java 11 con Files.writeString
