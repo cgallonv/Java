@@ -60,7 +60,7 @@ class PelotaHilos implements Runnable {
 
 class Pelota {
 
-	// Mueve la pelota invirtiendo posición si choca con límites
+	// Mueve la pelota invirtiendo posiciÃ³n si choca con lÃ­mites
 
 	public void mueve_pelota(Rectangle2D limites) {
 		x += dx;
@@ -89,11 +89,11 @@ class Pelota {
 
 	// detener pelota
 	public void detener() {
-		x = 0;
-		y = 0;
+		x = 1;
+		y = 1;
 	}
 
-	// Forma de la pelota en su posición inicial
+	// Forma de la pelota en su posiciÃ³n inicial
 
 	public Ellipse2D getShape() {
 		return new Ellipse2D.Double(x, y, TAMX, TAMY);
@@ -108,12 +108,12 @@ class Pelota {
 
 }
 
-// Lámina que dibuja las pelotas----------------------------------------------------------------------
+// LÃ¡mina que dibuja las pelotas----------------------------------------------------------------------
 
 @SuppressWarnings("serial")
 class LaminaPelota extends JPanel {
 
-	// Añadimos pelota a la lámina
+	// AÃ±adimos pelota a la lÃ¡mina
 	public void add(Pelota b) {
 		pelotas.add(b);
 	}
@@ -130,7 +130,7 @@ class LaminaPelota extends JPanel {
 	private ArrayList<Pelota> pelotas = new ArrayList<Pelota>();
 }
 
-//Marco con lámina y botones------------------------------------------------------------------------------
+//Marco con lÃ¡mina y botones------------------------------------------------------------------------------
 
 @SuppressWarnings("serial")
 class MarcoRebote extends JFrame {
@@ -173,7 +173,7 @@ class MarcoRebote extends JFrame {
 
 	}
 
-	// Añade pelota y la bota 1000 veces
+	// AÃ±ade pelota y la bota 1000 veces
 
 	public void comienza_el_juego() {
 		Pelota pelota = new Pelota();
