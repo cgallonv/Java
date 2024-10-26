@@ -1,12 +1,12 @@
 package excepciones;
 
 import java.util.*;
-
+//entrada de datos
 public class Entrada_datos {
 
 	public static void main(String[] args) {
 
-		System.out.println("¿Que deseas hacer?");
+		System.out.println("Â¿Que deseas hacer?");
 		System.out.println("1. Introducir datos");
 		System.out.println("2. Salir del programa");
 
@@ -18,7 +18,7 @@ public class Entrada_datos {
 				/*
 				 * Hay dos tipos de erores, los comprobados y los no comprobados. No comprobado=
 				 * error del desarrollador, y no necesariamente hay que usar try-catch
-				 * Comprobados= son de máquina, error de disco, memoria, etc, se requiere
+				 * Comprobados= son de mÃ¡quina, error de disco, memoria, etc, se requiere
 				 * try-catch
 				 */
 				// no me obliga a usar el try-catch porque hereda de runtime exception
@@ -50,7 +50,7 @@ public class Entrada_datos {
 		}
 		System.out.println("Introduce edad, por favor");
 		int edad = entrada.nextInt();
-		System.out.println("Hola " + nombre_usuario + ". El anio que viene tendras " + (edad + 1) + " años");
+		System.out.println("Hola " + nombre_usuario + ". El anio que viene tendras " + (edad + 1) + " aÃ±os");
 		entrada.close();
 		System.out.println("Hemos terminado");
 	}
